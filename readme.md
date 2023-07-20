@@ -3,6 +3,11 @@
 estimates ethereum gas price based on recent blocks and provides a simple api
 
 ## installation
+docker build -t gas:latest .
+docker run -itd -p 80:8000 --restart=always --name gas gas:latest
+curl localhost
+
+OR
 
 requires python 3.6 or higher and an ethereum full node. If you dont have a full node you can use [Quiknode](https://www.quiknode.io/) or [Infura](https://infura.io/).
 
